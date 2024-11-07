@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "InstantiateMsg",
+  "type": "object",
+  "required": [
+    "babylon_tag",
+    "btc_confirmation_depth",
+    "checkpoint_finalization_timeout",
+    "network",
+    "notify_cosmos_zone"
+  ],
+  "properties": {
+    "admin": {
+      "description": "If set, this will be the Wasm migration / upgrade admin of the BTC staking contract and the BTC finality contract",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "babylon_tag": {
+      "description": "babylon_tag is a string encoding four bytes used for identification / tagging of the Babylon zone. NOTE: this is a hex string, not raw bytes",
+      "type": "string"
+    },
+    "btc_confirmation_depth": {
+      "type": "integer",
+      "format": "uint64",
+      "minimum": 0.0
+    },
+    "btc_finality_code_id": {
+      "description": "If set, this will instantiate a BTC finality contract",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "format": "uint64",
+      "minimum": 0.0
+    },
+    "btc_finality_msg": {
+      "description": "If set, this will define the instantiation message for the BTC finality contract. This message is opaque to the Babylon contract, and depends on the specific finality contract being instantiated",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/Binary"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "btc_staking_code_id": {
+      "description": "If set, this will instantiate a BTC staking contract for BTC re-staking",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "format": "uint64",
+      "minimum": 0.0
+    },
+    "btc_staking_msg": {
+      "description": "If set, this will define the instantiation message for the BTC staking contract. This message is opaque to the Babylon contract, and depends on the specific staking contract being instantiated",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/Binary"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "checkpoint_finalization_timeout": {
+      "type": "integer",
+      "format": "uint64",
+      "minimum": 0.0
+    },
+    "consumer_description": {
+      "description": "Description of the consumer",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "consumer_name": {
+      "description": "Name of the consumer",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "network": {
+      "$ref": "#/definitions/Network"
+    },
+    "notify_cosmos_zone": {
+      "description": "notify_cosmos_zone indicates whether to send Cosmos zone messages notifying BTC-finalised headers. NOTE: If set to true, then the Cosmos zone needs to integrate the corresponding message handler as well",
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "Binary": {
+      "description": "Binary is a wrapper around Vec<u8> to add base64 de/serialization with serde. It also adds some helper methods to help encode inline.\n\nThis is only needed as serde-json-{core,wasm} has a horrible encoding for Vec<u8>. See also <https://github.com/CosmWasm/cosmwasm/blob/main/docs/MESSAGE_TYPES.md>.",
+      "type": "string"
+    },
+    "Network": {
+      "type": "string",
+      "enum": [
+        "mainnet",
+        "testnet",
+        "signet",
+        "regtest"
+      ]
+    }
+  }
+}

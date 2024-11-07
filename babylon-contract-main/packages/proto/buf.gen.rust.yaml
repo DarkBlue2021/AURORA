@@ -1,0 +1,34 @@
+version: v1
+types:
+  include:
+    - babylon.btccheckpoint.v1.TransactionInfo
+    - babylon.btccheckpoint.v1.TransactionKey
+    - babylon.btclightclient.v1.BTCHeaderInfo
+    - babylon.btclightclient.v1.QueryMainChainResponse
+    - babylon.checkpointing.v1.ValidatorWithBlsKeySet
+    - babylon.checkpointing.v1.ValidatorWithBlsKey
+    - babylon.checkpointing.v1.RawCheckpoint
+    - babylon.epoching.v1.Epoch
+    - babylon.zoneconcierge.v1.IndexedHeader
+    - babylon.zoneconcierge.v1.Forks
+    - babylon.zoneconcierge.v1.ProofEpochSealed
+    - babylon.zoneconcierge.v1.ProofFinalizedChainInfo
+    - babylon.zoneconcierge.v1.FinalizedChainInfo
+    - babylon.zoneconcierge.v1.QueryFinalizedChainsInfoResponse
+    - babylon.zoneconcierge.v1.ZoneconciergePacketData
+    - babylon.zoneconcierge.v1.BTCTimestamp
+    - babylon.btcstaking.v1.FinalityProvider
+    - babylon.btcstaking.v1.BTCDelegation
+    - babylon.btcstaking.v1.Params
+    - babylon.finality.v1.PubRandCommit
+    - babylon.finality.v1.MsgAddFinalitySig
+    - babylon.finality.v1.MsgCommitPubRandList
+plugins:
+  - plugin: buf.build/community/neoeinstein-prost:v0.2.3
+    out: src/gen
+    opt:
+      - bytes=.
+      - compile_well_known_types
+      - extern_path=.google.protobuf=::pbjson_types
+      - extern_path=.cosmos=cosmos_sdk_proto::cosmos
+      - extern_path=.tendermint=tendermint_proto

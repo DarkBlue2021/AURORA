@@ -1,0 +1,15 @@
+[package]
+name = "babylon-proto"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+doctest = false
+
+[dependencies]
+bitvec            = { workspace = true }
+cosmos-sdk-proto  = { workspace = true }
+pbjson-types      = { workspace = true }
+prost             = { workspace = true }
+sha2              = { workspace = true }
+tendermint-proto  = { workspace = true }

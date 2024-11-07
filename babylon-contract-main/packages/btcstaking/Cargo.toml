@@ -1,0 +1,21 @@
+[package]
+name              = "babylon-btcstaking"
+description       = "BTC staking library in Rust"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+babylon-bitcoin = { workspace = true }
+bitcoin         = { workspace = true }
+digest          = { workspace = true }
+rust_decimal    = { workspace = true }
+hex             = { workspace = true }
+sha2            = { workspace = true }
+k256            = { workspace = true }
+thiserror       = { workspace = true }
+eots            = { path = "../eots" }
+
+[dev-dependencies]
+test-utils    = { path = "../test-utils" }
+babylon-proto = { workspace = true }
+prost         = { workspace = true }
