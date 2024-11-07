@@ -1,3 +1,5 @@
+![Logo](/pitch-deck/Aurora_logo.png)
+
 # AURORA Protocol
 
 ### Babylon-Secured Carbon Credit Certification & Farming Investment Platform
@@ -11,6 +13,7 @@ AURORA Protocol is a blockchain-based platform aimed at transforming carbon cred
 - [Overview](#overview)
 - [Key Features](#key-features)
 - [Architecture](#architecture)
+- [Rooch Network Integration](#rooch-network-integration)
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [Configuration](#configuration)
@@ -44,6 +47,19 @@ The AURORA Protocol addresses the high costs, limited liquidity, and access barr
 
 ---
 
+## Rooch Network Integration
+
+The AURORA Protocol integrates with the **Rooch Network** as a critical component of its architecture:
+
+- **Stackable Layer 2 Solution**: Rooch Network offers a Layer 2 (L2) solution designed for building off-chain, Bitcoin-centric applications that are scalable and efficient, allowing AURORA to handle high transaction volumes.
+- **On-Chain State Access**: AURORA benefits from Rooch's ability to access Bitcoin’s complete on-chain state directly within smart contracts, simplifying the investment process by eliminating the need for bridging.
+- **Cross-Layer Asset Migration**: The Rooch Network enables seamless migration of assets between Layer 1 (L1) and L2, allowing flexible asset management within AURORA.
+- **MoveVM & VApp Container**: Using Rooch’s MoveVM-based VApp Container, AURORA can build verifiable applications that ensure secure and transparent operations, crucial for carbon credit certification and returns distribution.
+
+With Rooch Network, AURORA Protocol provides a robust and scalable environment to manage carbon credit investments backed by Bitcoin, enhancing liquidity and investor confidence.
+
+---
+
 ## Prerequisites
 
 - **Node.js** (v14.x or later)
@@ -61,6 +77,4 @@ The AURORA Protocol addresses the high costs, limited liquidity, and access barr
 ```bash
 git clone https://github.com/yourusername/AURORA-Protocol.git
 cd AURORA-Protocol
-
-
 
