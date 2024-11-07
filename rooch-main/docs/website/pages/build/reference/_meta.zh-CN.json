@@ -1,0 +1,9 @@
+{
+  "rooch-cli": "Rooch CLI",
+  "rooch-framework": {
+    "title": "Rooch Framework",
+    "display": "hidden"
+  },
+  "sdk": "SDK",
+  "rpc": "RPC"
+}

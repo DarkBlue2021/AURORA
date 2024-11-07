@@ -1,0 +1,69 @@
+{
+  "index": {
+    "title": "主页",
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "timestamp": false,
+      "layout": "raw"
+    }
+  },
+  "learn": {
+    "title": "学习",
+    "type": "page"
+  },
+  "build": {
+    "title": "开发",
+    "type": "page"
+  },
+  "blog": {
+    "title": "博客",
+    "type": "page",
+    "theme": {
+      "sidebar": false,
+      "timestamp": false,
+      "typesetting": "article"
+    }
+  },
+  "dashboard": {
+    "title": "Portal 入口",
+    "type": "page",
+    "href": "https://portal.rooch.network/",
+    "newWindow": true
+  },
+  "404": {
+    "type": "page",
+    "theme": {
+      "sidebar": false,
+      "typesetting": "article"
+    }
+  },
+  "brand": {
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "sidebar": false,
+      "timestamp": false,
+      "typesetting": "article"
+    }
+  },
+  "about": {
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "sidebar": false,
+      "timestamp": false,
+      "typesetting": "article"
+    }
+  },
+  "archives": {
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "sidebar": false,
+      "timestamp": false,
+      "typesetting": "article"
+    },
+    "title":"Archives"
+  }
+}
