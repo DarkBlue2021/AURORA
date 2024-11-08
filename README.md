@@ -70,9 +70,9 @@ With Rooch Network, AURORA Protocol provides a robust and scalable environment t
 
 ---
 
-## Getting Started
+## Example Code
 
-### Clone the Repository
+### Smart Contract Examples (Invest & Return)
 
 ```bash
 git clone https://github.com/yourusername/AURORA-Protocol.git
@@ -257,10 +257,4 @@ module AuroraProtocol::ReturnSmartContract {
         portfolio.total_returned
     }
 }
-
-
-
-
-
-
 
