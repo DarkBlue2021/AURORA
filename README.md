@@ -1,6 +1,6 @@
 ![Logo](/pitch-deck/Aurora_logo.png)
 
-# AURORA Protocol
+# AURORA Protocol (Babylon & Rooch Network)
 
 ### Babylon-Secured Carbon Credit Certification Investment Platform
 
