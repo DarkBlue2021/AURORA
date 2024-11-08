@@ -23,7 +23,9 @@ The AURORA Protocol addresses the high costs, limited liquidity, and access barr
 
 ---
 
-## Technologies Used
+## Technologies Used (Babylon & Rooch Network)
+
+![Logo](/pitch-deck/Solution.png)
 
 1. **Invest Smart Contract**: Manages initial carbon credit investments, allocates funds for certification, and interfaces with Babylon for staking.
 2. **Return Smart Contract**: Distributes returns to investors, pulling yield data from Babylon and executing distributions via Rooch Network.
@@ -33,8 +35,6 @@ The AURORA Protocol addresses the high costs, limited liquidity, and access barr
 ---
 
 ## Rooch Network Integration
-
-![Logo](/pitch-deck/Solution.png)
 
 The AURORA Protocol integrates with the **Rooch Network** as a critical component of its architecture:
 
