@@ -34,7 +34,7 @@ The AURORA Protocol addresses the high costs, limited liquidity, and access barr
 
 ## Rooch Network Integration
 
-![Logo](/pitch-deck/Solution.ng)
+![Logo](/pitch-deck/Solution.png)
 
 The AURORA Protocol integrates with the **Rooch Network** as a critical component of its architecture:
 
