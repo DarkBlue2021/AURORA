@@ -78,3 +78,187 @@ With Rooch Network, AURORA Protocol provides a robust and scalable environment t
 git clone https://github.com/yourusername/AURORA-Protocol.git
 cd AURORA-Protocol
 
+node scripts/invest.js --amount 100 --project-id 1
+
+## Example: Invest Smart Contact 
+
+This contract includes functions for initializing investments, tracking investors' contributions, and allocating funds to carbon credit projects.
+
+// Invest.move
+
+module AuroraProtocol::InvestSmartContract {
+
+    use 0x1::Account;
+    use 0x1::Signer;
+    use 0x1::Event;
+    use 0x1::Coin;
+    
+    // Define the structure for an investment record
+    struct InvestmentRecord has store {
+        investor: address,
+        amount: u64,
+        timestamp: u64,
+    }
+
+    // Define a resource to hold all investments
+    struct InvestmentPortfolio has key {
+        total_invested: u64,
+        investments: vector<InvestmentRecord>,
+    }
+
+    // Define an event for investment activity
+    struct InvestmentEvent has copy, drop {
+        investor: address,
+        amount: u64,
+        timestamp: u64,
+    }
+
+    // Initialize the event handle for tracking investments
+    public fun new_portfolio(account: &signer) {
+        move_to<InvestmentPortfolio>(account, InvestmentPortfolio {
+            total_invested: 0,
+            investments: vector::empty<InvestmentRecord>(),
+        });
+    }
+
+    // Function to make an investment
+    public fun invest(account: &signer, amount: u64) acquires InvestmentPortfolio {
+        let investor_address = Signer::address_of(account);
+
+        // Ensure the investor has sufficient funds
+        Coin::withdraw(account, amount);
+
+        // Log the investment with a timestamp
+        let investment_record = InvestmentRecord {
+            investor: investor_address,
+            amount,
+            timestamp: Timestamp::now(),
+        };
+
+        // Add investment to portfolio
+        let portfolio = borrow_global_mut<InvestmentPortfolio>(investor_address);
+        vector::push_back(&mut portfolio.investments, investment_record);
+        portfolio.total_invested = portfolio.total_invested + amount;
+
+        // Emit an investment event
+        Event::emit<InvestmentEvent>(
+            &portfolio.investments,
+            InvestmentEvent {
+                investor: investor_address,
+                amount,
+                timestamp: Timestamp::now(),
+            },
+        );
+    }
+
+    // Function to view total investment for a specific investor
+    public fun get_total_invested(account: address): u64 acquires InvestmentPortfolio {
+        let portfolio = borrow_global<InvestmentPortfolio>(account);
+        portfolio.total_invested
+    }
+
+    // Withdraw function for returning funds (partial or complete)
+    public fun withdraw(account: &signer, amount: u64) acquires InvestmentPortfolio {
+        let investor_address = Signer::address_of(account);
+        let portfolio = borrow_global_mut<InvestmentPortfolio>(investor_address);
+
+        assert!(portfolio.total_invested >= amount, 0x1); // Ensure sufficient balance
+        portfolio.total_invested = portfolio.total_invested - amount;
+
+        // Transfer back to the investor
+        Coin::deposit(account, amount);
+    }
+}
+
+## Example: Return Smart Contact 
+
+This contract manages the distribution of returns, including Bitcoin staking yields from Babylon, to investors in the AURORA Protocol.
+
+// Return.move
+
+module AuroraProtocol::ReturnSmartContract {
+
+    use 0x1::Account;
+    use 0x1::Signer;
+    use 0x1::Event;
+    use 0x1::Coin;
+    use 0x1::Vector;
+    
+    // Struct to represent an investor's return record
+    struct ReturnRecord has store {
+        investor: address,
+        amount: u64,
+        yield_amount: u64,
+        timestamp: u64,
+    }
+
+    // Resource to hold return records for all investors
+    struct ReturnPortfolio has key {
+        total_returned: u64,
+        return_records: vector<ReturnRecord>,
+    }
+
+    // Event to emit when a return is distributed
+    struct ReturnEvent has copy, drop {
+        investor: address,
+        amount: u64,
+        yield_amount: u64,
+        timestamp: u64,
+    }
+
+    // Function to initialize a new return portfolio for an investor
+    public fun new_return_portfolio(account: &signer) {
+        move_to<ReturnPortfolio>(account, ReturnPortfolio {
+            total_returned: 0,
+            return_records: vector::empty<ReturnRecord>(),
+        });
+    }
+
+    // Function to distribute returns to investors
+    public fun distribute_return(account: &signer, amount: u64, yield_amount: u64) acquires ReturnPortfolio {
+        let investor_address = Signer::address_of(account);
+
+        // Ensure the smart contract has sufficient funds
+        Coin::withdraw(account, amount + yield_amount);
+
+        // Create a return record with the current timestamp
+        let return_record = ReturnRecord {
+            investor: investor_address,
+            amount,
+            yield_amount,
+            timestamp: Timestamp::now(),
+        };
+
+        // Update the return portfolio with the new return record
+        let portfolio = borrow_global_mut<ReturnPortfolio>(investor_address);
+        vector::push_back(&mut portfolio.return_records, return_record);
+        portfolio.total_returned = portfolio.total_returned + amount + yield_amount;
+
+        // Emit a return event
+        Event::emit<ReturnEvent>(
+            &portfolio.return_records,
+            ReturnEvent {
+                investor: investor_address,
+                amount,
+                yield_amount,
+                timestamp: Timestamp::now(),
+            },
+        );
+
+        // Deposit the return amount and yield back into the investor's account
+        Coin::deposit(account, amount + yield_amount);
+    }
+
+    // Function to view total returns for an investor
+    public fun get_total_returned(account: address): u64 acquires ReturnPortfolio {
+        let portfolio = borrow_global<ReturnPortfolio>(account);
+        portfolio.total_returned
+    }
+}
+
+
+
+
+
+
+
