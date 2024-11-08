@@ -1,5 +1,7 @@
 ![Logo](/pitch-deck/Aurora_logo.png)
 
+### Born at Babylon Hacker House, 🇹🇭 Bangkok, Nov 2024 - สวัสดีชาวโลก (Hello World) !
+
 # AURORA Protocol (Babylon & Rooch Network)
 
 ### Babylon-Secured Carbon Credit Certification Investment Platform
