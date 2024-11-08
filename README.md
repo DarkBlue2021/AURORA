@@ -71,16 +71,15 @@ This section outlines the user journey for investors interacting with the AURORA
 ## 3. Tracking Returns
 
 - **Step 8**: Receive regular updates on your investment’s impact metrics, including carbon credits earned.
-- **Step 9**: View periodic updates on Bitcoin staking yields generated through Babylon.
-- **Step 10**: The **Return Smart Contract** distributes returns and staking yields to your account.
-- **Step 11**: Receive notifications about distributed returns, visible in your portfolio.
+- **Step 9**: The **Return Smart Contract** distributes returns and staking yields to your account.
+- **Step 10**: Receive notifications about distributed returns, visible in your portfolio.
 
 ---
 
 ## 4. Return Distribution
 
-- **Step 12**: Returns are distributed based on the project’s timeline, with both principal and Bitcoin staking yields allocated to your account.
-- **Step 13**: View a breakdown of cumulative returns and yields in your portfolio dashboard.
+- **Step 11**: Returns are distributed based on the project’s timeline, with both principal and Bitcoin staking yields allocated to your account.
+- **Step 12**: View a breakdown of cumulative returns and yields in your portfolio dashboard.
 
 ## Prerequisites
 
