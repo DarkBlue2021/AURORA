@@ -80,6 +80,8 @@ cd AURORA-Protocol
 
 node scripts/invest.js --amount 100 --project-id 1
 
+---
+
 ## Example: Invest Smart Contact 
 
 This contract includes functions for initializing investments, tracking investors' contributions, and allocating funds to carbon credit projects.
@@ -169,7 +171,7 @@ module AuroraProtocol::InvestSmartContract {
         Coin::deposit(account, amount);
     }
 }
-
+---
 ## Example: Return Smart Contact 
 
 This contract manages the distribution of returns, including Bitcoin staking yields from Babylon, to investors in the AURORA Protocol.
