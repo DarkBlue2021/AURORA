@@ -43,7 +43,7 @@ The AURORA Protocol integrates with the **Rooch Network** as a critical componen
 
 With Rooch Network, AURORA Protocol provides a robust and scalable environment to manage carbon credit investments backed by Bitcoin, enhancing liquidity and investor confidence.
 
-# User Journey for AURORA Protocol
+# User Journey for Stakers
 
 This section outlines the user journey for investors interacting with the AURORA Protocol, from sign-up to investment, tracking returns, and withdrawals.
 
