@@ -43,6 +43,78 @@ The AURORA Protocol integrates with the **Rooch Network** as a critical componen
 
 With Rooch Network, AURORA Protocol provides a robust and scalable environment to manage carbon credit investments backed by Bitcoin, enhancing liquidity and investor confidence.
 
+# User Journey for AURORA Protocol
+
+This section outlines the user journey for investors interacting with the AURORA Protocol, from sign-up to investment, tracking returns, and withdrawals.
+
+---
+
+## 1. Sign-Up and Account Setup
+
+- **Step 1**: Visit the AURORA Protocol platform website or app and create an account.
+- **Step 2**: Complete the onboarding process, including KYC verification and connecting a wallet or setting up a Rooch-compatible wallet.
+- **Step 3**: Access your personalized portfolio dashboard to view potential investment opportunities and monitor returns.
+
+---
+
+## 2. Initial Investment
+
+- **Step 4**: Browse available carbon credit projects, each with detailed information about environmental impact, expected returns, and certifications.
+- **Step 5**: Select a project and enter the amount you wish to invest.
+- **Step 6**: The **Invest Smart Contract** is executed, withdrawing funds from your account and allocating them to the chosen project.
+- **Step 7**: Receive a confirmation message and view your investment details in your portfolio.
+
+---
+
+## 3. Staking and Yield Generation
+
+- **Step 8**: A portion of your investment is allocated for **Babylon Bitcoin staking**, generating additional returns.
+- **Step 9**: Monitor projected staking yields in your portfolio, with real-time updates on the status of your investment.
+
+---
+
+## 4. Tracking Returns
+
+- **Step 10**: Receive regular updates on your investment’s impact metrics, including carbon credits earned.
+- **Step 11**: View periodic updates on Bitcoin staking yields generated through Babylon.
+- **Step 12**: The **Return Smart Contract** distributes returns and staking yields to your account.
+- **Step 13**: Receive notifications about distributed returns, visible in your portfolio.
+
+---
+
+## 5. Return Distribution
+
+- **Step 14**: Returns are distributed based on the project’s timeline, with both principal and Bitcoin staking yields allocated to your account.
+- **Step 15**: View a breakdown of cumulative returns and yields in your portfolio dashboard.
+
+---
+
+## 6. Withdrawals
+
+- **Step 16**: Initiate a withdrawal at any time, choosing to withdraw a portion or the full balance of your returns.
+- **Step 17**: The **Return Smart Contract** handles the transfer of funds to your linked wallet securely.
+- **Step 18**: Receive a confirmation of the withdrawal, and your portfolio balance is updated.
+
+---
+
+## 7. Reinvestment and Portfolio Growth
+
+- **Step 19**: Reinvest your returns into new carbon credit projects to grow your portfolio and compound your returns.
+- **Step 20**: Access detailed reports and metrics for each project, aiding in making informed investment decisions.
+
+---
+
+## 8. Impact Reporting and Community Engagement
+
+- **Step 21**: Receive comprehensive impact reports showing your contribution to environmental sustainability and carbon offset.
+- **Step 22**: Engage with the AURORA community, participate in discussions, and, if applicable, take part in governance activities.
+
+---
+
+## 9. Notifications and Reminders
+
+- **Step 23**: Customize notifications to receive updates about upcoming returns, project milestones, and important events on the platform.
+
 ---
 
 ## Prerequisites
@@ -245,77 +317,6 @@ module AuroraProtocol::ReturnSmartContract {
 
 ---
 
-# User Journey for AURORA Protocol
-
-This section outlines the user journey for investors interacting with the AURORA Protocol, from sign-up to investment, tracking returns, and withdrawals.
-
----
-
-## 1. Sign-Up and Account Setup
-
-- **Step 1**: Visit the AURORA Protocol platform website or app and create an account.
-- **Step 2**: Complete the onboarding process, including KYC verification and connecting a wallet or setting up a Rooch-compatible wallet.
-- **Step 3**: Access your personalized portfolio dashboard to view potential investment opportunities and monitor returns.
-
----
-
-## 2. Initial Investment
-
-- **Step 4**: Browse available carbon credit projects, each with detailed information about environmental impact, expected returns, and certifications.
-- **Step 5**: Select a project and enter the amount you wish to invest.
-- **Step 6**: The **Invest Smart Contract** is executed, withdrawing funds from your account and allocating them to the chosen project.
-- **Step 7**: Receive a confirmation message and view your investment details in your portfolio.
-
----
-
-## 3. Staking and Yield Generation
-
-- **Step 8**: A portion of your investment is allocated for **Babylon Bitcoin staking**, generating additional returns.
-- **Step 9**: Monitor projected staking yields in your portfolio, with real-time updates on the status of your investment.
-
----
-
-## 4. Tracking Returns
-
-- **Step 10**: Receive regular updates on your investment’s impact metrics, including carbon credits earned.
-- **Step 11**: View periodic updates on Bitcoin staking yields generated through Babylon.
-- **Step 12**: The **Return Smart Contract** distributes returns and staking yields to your account.
-- **Step 13**: Receive notifications about distributed returns, visible in your portfolio.
-
----
-
-## 5. Return Distribution
-
-- **Step 14**: Returns are distributed based on the project’s timeline, with both principal and Bitcoin staking yields allocated to your account.
-- **Step 15**: View a breakdown of cumulative returns and yields in your portfolio dashboard.
-
----
-
-## 6. Withdrawals
-
-- **Step 16**: Initiate a withdrawal at any time, choosing to withdraw a portion or the full balance of your returns.
-- **Step 17**: The **Return Smart Contract** handles the transfer of funds to your linked wallet securely.
-- **Step 18**: Receive a confirmation of the withdrawal, and your portfolio balance is updated.
-
----
-
-## 7. Reinvestment and Portfolio Growth
-
-- **Step 19**: Reinvest your returns into new carbon credit projects to grow your portfolio and compound your returns.
-- **Step 20**: Access detailed reports and metrics for each project, aiding in making informed investment decisions.
-
----
-
-## 8. Impact Reporting and Community Engagement
-
-- **Step 21**: Receive comprehensive impact reports showing your contribution to environmental sustainability and carbon offset.
-- **Step 22**: Engage with the AURORA community, participate in discussions, and, if applicable, take part in governance activities.
-
----
-
-## 9. Notifications and Reminders
-
-- **Step 23**: Customize notifications to receive updates about upcoming returns, project milestones, and important events on the platform.
 
 
 
