@@ -68,7 +68,7 @@ This section outlines the user journey for investors interacting with the AURORA
 
 ---
 
-## 4. Tracking Returns
+## 3. Tracking Returns
 
 - **Step 8**: Receive regular updates on your investment’s impact metrics, including carbon credits earned.
 - **Step 9**: View periodic updates on Bitcoin staking yields generated through Babylon.
@@ -77,7 +77,7 @@ This section outlines the user journey for investors interacting with the AURORA
 
 ---
 
-## 5. Return Distribution
+## 4. Return Distribution
 
 - **Step 12**: Returns are distributed based on the project’s timeline, with both principal and Bitcoin staking yields allocated to your account.
 - **Step 13**: View a breakdown of cumulative returns and yields in your portfolio dashboard.
