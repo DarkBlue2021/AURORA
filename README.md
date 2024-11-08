@@ -62,32 +62,25 @@ This section outlines the user journey for investors interacting with the AURORA
 ## 2. Initial Investment
 
 - **Step 4**: Browse available carbon credit projects, each with detailed information about environmental impact, expected returns, and certifications.
-- **Step 5**: Select a project and enter the amount you wish to invest.
+- **Step 5**: Select a project and enter the amount Babylon BTC Yields you wish to invest.
 - **Step 6**: The **Invest Smart Contract** is executed, withdrawing funds from your account and allocating them to the chosen project.
 - **Step 7**: Receive a confirmation message and view your investment details in your portfolio.
 
 ---
 
-## 3. Staking and Yield Generation
-
-- **Step 8**: A portion of your investment is allocated for **Babylon Bitcoin staking**, generating additional returns.
-- **Step 9**: Monitor projected staking yields in your portfolio, with real-time updates on the status of your investment.
-
----
-
 ## 4. Tracking Returns
 
-- **Step 10**: Receive regular updates on your investment’s impact metrics, including carbon credits earned.
-- **Step 11**: View periodic updates on Bitcoin staking yields generated through Babylon.
-- **Step 12**: The **Return Smart Contract** distributes returns and staking yields to your account.
-- **Step 13**: Receive notifications about distributed returns, visible in your portfolio.
+- **Step 8**: Receive regular updates on your investment’s impact metrics, including carbon credits earned.
+- **Step 9**: View periodic updates on Bitcoin staking yields generated through Babylon.
+- **Step 10**: The **Return Smart Contract** distributes returns and staking yields to your account.
+- **Step 11**: Receive notifications about distributed returns, visible in your portfolio.
 
 ---
 
 ## 5. Return Distribution
 
-- **Step 14**: Returns are distributed based on the project’s timeline, with both principal and Bitcoin staking yields allocated to your account.
-- **Step 15**: View a breakdown of cumulative returns and yields in your portfolio dashboard.
+- **Step 12**: Returns are distributed based on the project’s timeline, with both principal and Bitcoin staking yields allocated to your account.
+- **Step 13**: View a breakdown of cumulative returns and yields in your portfolio dashboard.
 
 ## Prerequisites
 
