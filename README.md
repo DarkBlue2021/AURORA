@@ -2,7 +2,7 @@
 
 # AURORA Protocol
 
-### Babylon-Secured Carbon Credit Certification & Farming Investment Platform
+### Babylon-Secured Carbon Credit Certification Investment Platform
 
 AURORA Protocol is a blockchain-based platform aimed at transforming carbon credit certification and investment in the agriculture sector. Built on secure, decentralized technologies, AURORA leverages **Babylon Bitcoin staking** and the **Rooch Network** to enable efficient, scalable, and accessible carbon credit investments for a sustainable future.
 
@@ -48,6 +48,8 @@ With Rooch Network, AURORA Protocol provides a robust and scalable environment t
 # User Journey for Stakers
 
 This section outlines the user journey for investors interacting with the AURORA Protocol, from sign-up to investment, tracking returns, and withdrawals.
+
+![Logo](/pitch-deck/UserJourney.png)
 
 ---
 
